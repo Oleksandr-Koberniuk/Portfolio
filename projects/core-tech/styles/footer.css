@@ -1,0 +1,51 @@
+footer {
+    font-size: 1rem;
+    margin-top: 100px;
+    background-color: rgb(140, 78, 255);
+    padding: 30px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-text {
+    margin-bottom: 35px;
+}
+
+.footer-title {
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.view-more-link {
+    border: 1px solid white;
+    padding: 10px 25px;
+    transition: all 0.2s;
+}
+
+.view-more-link:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (width <= 850px) {
+    footer {     
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 200px 200px;
+        gap: 60px;
+    }
+}
+
+@media (width <= 500px) {
+    footer {
+        display: grid;
+        justify-content: left;
+        grid-template-columns: 200px;
+        gap: 60px;
+    }
+}

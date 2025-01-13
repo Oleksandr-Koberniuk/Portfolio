@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+
+    
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/shop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@119.3,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="c">
+            <a class="project-name" href="index.html">         
+                CoreTech
+            </a>
+        </div>
+
+        <div class="bar-container">
+            <a class="link" href="index.html">
+                Home
+            </a>
+            <a class="link-active" href="shop.html">
+                Shop
+            </a>
+            <a class="link" href="help.html">
+                Help
+            </a>
+        </div>
+
+        <div class="menu">
+            <img class="menu-icon js-menu-icon" src="images/header/menu-icon.svg" alt="menu">
+        </div>
+
+        <a href="cart.html">
+            <div class="cart-header-container">
+                <img class="cart-icon" src="images/header/cart-icon.svg" alt="cart">      
+            </div>
+        </a>
+    </div>
+
+    <div class="menu-container js-menu-container">
+        <img class="cross-icon js-cross-icon" src="images/header/cross-icon.svg" alt="Exit">
+
+        <div class="menu-block">
+            <a href="index.html">
+                Home
+            </a>
+            <a class="active" href="shop.html">
+                Shop
+            </a>
+            <a href="help.html">
+                Help
+            </a>
+        </div>
+    </div>
+
+    <div class="sort-filters-wrapper">
+        <div class="filters-menu-button js-filters-menu-button">
+            Filters
+        </div>
+
+        <div class="sort-container">
+            <span>Sort By:</span>
+            <select class="js-sort-dropdown sort">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+                <option value="popularity-desc">Most Popular</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="filters-menu-container js-filters-menu-container">
+        <img class="cross-icon js-cross-icon-filters" src="images/header/cross-icon.svg" alt="Exit">
+
+        <div class="filters-menu">
+            <h2>Price</h2>
+            <div class="price-filter price-filter-menu">
+                <div class="price-selector-block">
+                    <p>Min. Price</p>
+                    <input type="number" class="price-input js-min-price-menu">
+                 
+                    <p>Max. Price</p>
+                    <input type="number" class="price-input js-max-price-menu">
+                </div>
+            </div>
+
+            <div class="brand-category-container">
+                
+                <div class="checkboxes-container">
+                    <h2>Category</h2>
+                    <div class="product-category-container">
+                        <input type="checkbox" class="js-product-category" value="phone">
+                        <span>Phones</span>
+                    </div>
+
+                    <div class="product-category-container">
+                        <input type="checkbox" class="js-product-category" value="laptop">
+                        <span>Laptops</span>
+                    </div>
+
+                    <div class="product-category-container">
+                        <input type="checkbox" class="js-product-category" value="speaker">
+                        <span>Speakers</span>
+                    </div>
+
+                    <div class="product-category-container">
+                        <input type="checkbox" class="js-product-category" value="headphones">
+                        <span>Headphones</span>
+                    </div>
+                </div>
+
+                
+                <div class="checkboxes-container">
+                    <h2>Brand</h2>
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Apple">
+                        <span>Apple</span>
+                    </div>
+                
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Samsung">
+                        <span>Samsung</span>
+                    </div>
+                
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="JBL">
+                        <span>JBL</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="HP">
+                        <span>HP</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Asus">
+                        <span>Asus</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Lenovo">
+                        <span>Lenovo</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Honor">
+                        <span>Honor</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Google">
+                        <span>Google</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="JBL">
+                        <span>JBL</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="WeurGhy">
+                        <span>WeurGhy</span>
+                    </div>
+
+                    <div class="product-brand-container">
+                        <input type="checkbox" class="js-product-brand" value="Sony">
+                        <span>Sony</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="general-container">
+        <div class="filters-container">
+            <div class="price-filter">
+                <h2>Price</h2>
+
+                <div class="price-selector-block">
+                    <p>Min. Price</p>
+                    <input type="number" class="price-input js-min-price">
+                 
+                    <p>Max. Price</p>
+                    <input type="number" class="price-input js-max-price">
+                </div>
+            </div>
+
+            <h2>Category</h2>
+            <div class="checkboxes-container">
+                <div class="product-category-container">
+                    <input type="checkbox" class="js-product-category" value="phone">
+                    <span>Phones</span>
+                </div>
+
+                <div class="product-category-container">
+                    <input type="checkbox" class="js-product-category" value="laptop">
+                    <span>Laptops</span>
+                </div>
+
+                <div class="product-category-container">
+                    <input type="checkbox" class="js-product-category" value="speaker">
+                    <span>Speakers</span>
+                </div>
+
+                <div class="product-category-container">
+                    <input type="checkbox" class="js-product-category" value="headphones">
+                    <span>Headphones</span>
+                </div>
+            </div>
+
+            <h2>Brand</h2>
+            <div class="checkboxes-container">
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Apple">
+                    <span>Apple</span>
+                </div>
+            
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Samsung">
+                    <span>Samsung</span>
+                </div>
+            
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="JBL">
+                    <span>JBL</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="HP">
+                    <span>HP</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Asus">
+                    <span>Asus</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Lenovo">
+                    <span>Lenovo</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Honor">
+                    <span>Honor</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Google">
+                    <span>Google</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="JBL">
+                    <span>JBL</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="WeurGhy">
+                    <span>WeurGhy</span>
+                </div>
+
+                <div class="product-brand-container">
+                    <input type="checkbox" class="js-product-brand" value="Sony">
+                    <span>Sony</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="products-container js-products-container">
+
+        </div> 
+    </div>
+
+    <footer>
+        <div>
+            <div class="footer-text">
+                <p class="footer-title">HAVE A QUESTION?</p>
+    
+                <p>EXPLORE OUR HELP CENTER</p>
+            </div>
+            
+            <a class="view-more-link" href="help.html">
+                VIEW MORE
+            </a>
+        </div>
+
+        <div>
+            <p class="footer-title">SHOP</p>
+
+            <a href="shop.html">ALL PRODUCTS</a>
+        </div>
+
+        <div>
+            <p class="footer-title">CONTACT</p>
+
+            <p>info@coretech.com</p>
+            <p>123-456-7890</p>
+        </div>
+
+        <div>
+            <p class="footer-title"> FOLLOW </p>
+            
+            <p>INSTAGRAM</p>
+            <p>FACEBOOK</p>
+            <p>TIKTOK</p>
+            <p>YOUTUBE</p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/shop.js"></script>
+</body>
+</html>

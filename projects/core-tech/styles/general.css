@@ -1,0 +1,10 @@
+body {
+    font-family: Space Grotesk;
+    color: white;
+    background-color: black;
+}
+
+.previous-price {
+    color: rgb(246, 109, 109);
+    font-size: 1rem;
+}
